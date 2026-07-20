@@ -1,0 +1,38 @@
+[
+  {
+    "id": "pg-connection",
+    "title": "PostgreSQL: диагностика connection refused",
+    "tags": ["postgresql", "connection", "network", "port"],
+    "content": "Проверить pg_isready, состояние PostgreSQL, host/port, DNS, firewall, security groups и строку подключения. Не отключать TLS без необходимости."
+  },
+  {
+    "id": "pg-deadlock",
+    "title": "PostgreSQL: deadlock detected",
+    "tags": ["postgresql", "deadlock", "transaction", "lock"],
+    "content": "Найти конфликтующие транзакции, сократить время транзакций, захватывать ресурсы в одинаковом порядке и повторять только идемпотентные операции."
+  },
+  {
+    "id": "hdfs-safe-mode",
+    "title": "HDFS: NameNode Safe Mode",
+    "tags": ["hadoop", "hdfs", "namenode", "safe mode"],
+    "content": "Проверить отчёт dfsadmin, живые DataNode, количество недореплицированных блоков и причины перехода NameNode в Safe Mode."
+  },
+  {
+    "id": "python-deps",
+    "title": "Python: проблемы окружения и зависимостей",
+    "tags": ["python", "venv", "pip", "module", "requirements"],
+    "content": "Проверить активный интерпретатор, virtualenv, pip freeze, файл зависимостей и одинаковый способ запуска локально и в контейнере."
+  },
+  {
+    "id": "disk-space",
+    "title": "Linux: закончилось место на диске",
+    "tags": ["linux", "disk", "space", "logs", "retention"],
+    "content": "Использовать df и du, проверить каталоги логов, временные файлы, inode, квоты и политику хранения. Перед удалением убедиться, что данные не нужны."
+  },
+  {
+    "id": "timeout",
+    "title": "Timeout: диагностика зависимого сервиса",
+    "tags": ["timeout", "network", "retry", "backoff"],
+    "content": "Проверить latency зависимого сервиса, DNS и сеть. Разделить connect/read timeout, использовать ограниченные retry с exponential backoff и jitter."
+  }
+]
